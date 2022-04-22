@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+
+  margin: 0;
+  padding-top: 216px;
+  padding-bottom: 216px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+
+  background: url("../img/kitchen.jpg") center/cover no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/kitchen@2x.jpg");
+    background-size: cover;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: top;
+}
+
+svg {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}

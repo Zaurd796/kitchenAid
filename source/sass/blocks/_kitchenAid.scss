@@ -1,0 +1,187 @@
+.kitchenAid__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kitchenAid__logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 459px;
+  margin-bottom: 54px;
+
+  background-color: #ffffff;
+}
+
+.kitchenAid__logo {
+  margin-top: -30px;
+}
+
+.kitchenAid__items-box {
+  display: flex;
+  width: 50%;
+  margin-bottom: 54px;
+  padding: 28px 10px 49px 94px;
+
+  background-color: #ac153a;
+}
+
+.kitchenAid__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:first-child {
+    margin-right: 38px;
+  }
+}
+
+.kitcheAid__item {
+  color: #ffffff;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.kitchenAid__info-box {
+  display: flex;
+  width: 100%;
+  padding: 17px 39px 35px 59px;
+
+  background-color: #ffffff;
+  border: 9px solid rgba(119, 119, 119, 0.25);
+}
+
+.kitchenAid__info-content {
+  margin-right: 241px;
+}
+
+.kitchenAid__descr {
+  margin-top: 0;
+  margin-bottom: 10px;
+  max-width: 401px;
+
+  font-size: 22px;
+  line-height: 27px;
+
+  border-bottom: 1px solid #333333;
+}
+
+.kitchenAid__tel {
+  margin-right: 49px;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.kitchenAid__mail {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.kitchenAid__address {
+  padding-top: 3px;
+}
+
+.kitchenAid__address-descr {
+  margin: 0;
+
+  & + & {
+    margin-top: 17px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .kitchenAid__info-box {
+    justify-content: space-between;
+  }
+
+  .kitchenAid__info-content {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .kitchenAid__info-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kitchenAid__info-content {
+    margin-bottom: 30px;
+  }
+
+  .kitchenAid__address {
+    margin-left: 36px;
+  }
+}
+
+@media (max-width: 917px) {
+  .kitchenAid__items-box {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .kitchenAid__items:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 685px) {
+  .kitchenAid__info-box {
+    display: block;
+  }
+
+  .kitchenAid__address {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 649px) {
+  .kitchenAid__logo-box {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .kitchenAid__items-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 625px) {
+  .kitchenAid__info-box {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+  }
+
+  .kitchenAid__descr {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 540px) {
+  .kitchenAid__tel {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .kitchenAid__items-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kitchenAid__items:first-of-type .kitcheAid__item:last-child {
+    margin-bottom: 8px;
+  }
+}
